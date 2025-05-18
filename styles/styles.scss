@@ -1,6 +1,8 @@
-@use "./variables";
 @use "./reboot";
+@use "./variables";
 @use "./init";
 
 //components
 @use "./components/botton";
+@use "./components/form";
+@use "./components/info-panel";
