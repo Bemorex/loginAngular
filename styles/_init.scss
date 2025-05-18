@@ -1,6 +1,10 @@
 @use "./variables" as vars;
 
+/* Estilos base de tipografía */
 body {
   font-family: vars.$font-family-base;
-  color: vars.$color-primary;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }

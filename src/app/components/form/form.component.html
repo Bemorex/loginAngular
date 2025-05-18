@@ -1,0 +1,21 @@
+<div class="form__group">
+  <label class="form__label" [for]="label()">{{ label() }}</label>
+  <div class="form__password-wrapper">
+  <input
+    [id]="label()"
+    [type]="type()"
+    class="form__input"
+    [placeholder]="placeholder()"
+  />
+  @if (type() === 'password') {
+  <button type="button" class="form__password-toggle">
+    <i class="far fa-eye"></i>
+  </button>
+  }
+  </div>
+</div>
+
+<!-- <div class="form__checkbox-wrapper">
+  <input id="remember" type="checkbox" class="form__checkbox" />
+  <label for="remember" class="form__checkbox-label">Recordarme</label>
+</div> -->

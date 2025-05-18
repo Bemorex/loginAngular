@@ -1,0 +1,7 @@
+<button [type]="type()" [class]="getButtonClass()" [disabled]="isDisabled()">
+  @if (imgSrc()) {
+  <img [src]="imgSrc()" alt="icon-google" />
+  } @if (text()) {
+  <span class="button__text">{{ text() }}</span>
+  }
+</button>

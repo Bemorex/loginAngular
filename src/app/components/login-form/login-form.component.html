@@ -1,0 +1,38 @@
+<div class="login__logo">
+  <img src="./assets/icon.png" alt="icon" />
+</div>
+<h1 class="login__title">INICIAR SESIÓN</h1>
+<div class="login__content">
+  <form class="form">
+    <app-form
+      type="text"
+      label="Correo electrónico"
+      placeholder="ejemplo@gmail.com"
+    />
+    <app-form type="password" label="Contraseña" placeholder="••••••" />
+    <div class="form__checkbox-wrapper">
+      <input id="remember" type="checkbox" class="form__checkbox" />
+      <label for="remember" class="form__checkbox-label">Recordarme</label>
+    </div>
+    <app-button
+      text="INGRESAR"
+      type="button"
+      buttonStyle="primary"
+      [isFullWidth]="true"
+      [isUpper]="true"
+    />
+  </form>
+
+  <div class="login__divider">
+    <hr class="login__divider-line" />
+    <span class="login__divider-text">o</span>
+    <hr class="login__divider-line" />
+  </div>
+
+  <app-button
+    text="Continuar con Google"
+    type="submit"
+    buttonStyle="social"
+    imgSrc="./assets/iconGoogle.png"
+  />
+</div>
