@@ -2,5 +2,10 @@
   <section class="login__section">
     <app-login-form></app-login-form>
   </section>
-  <section class="login__detail"><app-info-panel></app-info-panel></section>
+  @if(showInfoPanel){
+  <section class="login__detail">
+    <app-info-panel></app-info-panel>
+  </section>
+
+  }
 </div>
