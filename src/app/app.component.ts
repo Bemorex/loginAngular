@@ -1,13 +1,11 @@
 import { Component } from '@angular/core';
-import { ButtonComponent } from './components/button/button.component';
-import { InfoPanelComponent } from './components/info-panel/info-panel.component';
-import { LoginFormComponent } from './components/login-form/login-form.component';
+import { LoginComponent } from './pages/login/login.component';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
-  imports: [InfoPanelComponent, LoginFormComponent],
+  imports: [LoginComponent],
 })
 export class AppComponent {
   title = 'login';
